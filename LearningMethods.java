@@ -1,13 +1,40 @@
 import java.util.Scanner;
 
+
 public class LearningMethods {
     public static void main(String[] args) {
-        String name;
-        int age;
-        boolean indoorPerson = false;
-        boolean outdoorPerson = false;
+       
+        new LearningMethods().welcomeMessage();
+        new LearningMethods().getName();
+        new LearningMethods().getAge();
+        new LearningMethods().getYear();
+        
+    }
+        
+    
+public void welcomeMessage(){
+System.out.println("Hello! I want to show you how to use methods! ");
+}
+ public static String name;
+     public static   int age;
+    public static  boolean indoorPerson = false;
+       public static boolean outdoorPerson = false;
+       public static Scanner sc = new Scanner (System.in);
+public void getName(){
+System.out.println("First off, what is your name?");
+String name = sc.nextLine();
+System.out.println("Nice to meet you " + name + "!");
+}
+public void getAge(){
+    System.out.println("What is your age?");
+    age = sc.nextInt();
+}
+public void getYear(){
+    System.out.println("That means you where born in " + (2025 - age) + "!");
+}
 
-        System.out.println("Hello! I want to show you how to use methods!");
+
+        /*System.out.println("Hello! I want to show you how to use methods!");
         System.out.println("First off, what is your name?");
         Scanner sc = new Scanner (System.in);
         name = sc.nextLine();
@@ -36,5 +63,5 @@ public class LearningMethods {
         }
 
         sc.close();
-    }
+     */
 }
